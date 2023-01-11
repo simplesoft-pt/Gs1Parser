@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <Description>Lightweight GS1 parser for .NET applications.</Description>
+    <TargetFrameworks>netstandard2.0;netstandard1.0;net4.5;net4.0;net5.0</TargetFrameworks>
+  </PropertyGroup>
+
+</Project>
