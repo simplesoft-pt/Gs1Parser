@@ -19,17 +19,18 @@ public class Gs1ApplicationIdentifier
         string dataContent
     )
     {
-        Value = value
-            .NotNull(nameof(value))
-            .NotNullOrWhiteSpace(nameof(value));
+        value.NotNull(nameof(value));
+        value.NotNullOrWhiteSpace(nameof(value));
 
-        Prefix = prefix
-            .NotNull(nameof(prefix))
-            .NotNullOrWhiteSpace(nameof(prefix));
+        prefix.NotNull(nameof(prefix));
+        prefix.NotNullOrWhiteSpace(nameof(prefix));
 
-        DataContent = dataContent
-            .NotNull(nameof(dataContent))
-            .NotNullOrWhiteSpace(nameof(dataContent));
+        dataContent.NotNull(nameof(dataContent));
+        dataContent.NotNullOrWhiteSpace(nameof(dataContent));
+
+        Value = value;
+        Prefix = prefix;
+        DataContent = dataContent;
     }
 
     /// <summary>
