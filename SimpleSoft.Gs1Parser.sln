@@ -12,7 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSoft.Gs1Parser", "src\SimpleSoft.Gs1Parser\SimpleSoft.Gs1Parser.csproj", "{A1B5E3B4-1F94-4A47-BC9A-65DACB1E01F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleSoft.Gs1Parser", "src\SimpleSoft.Gs1Parser\SimpleSoft.Gs1Parser.csproj", "{A1B5E3B4-1F94-4A47-BC9A-65DACB1E01F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB044034-971B-4811-8C5C-2C574ACA243C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSoft.Gs1Parser.Tests", "tests\SimpleSoft.Gs1Parser.Tests\SimpleSoft.Gs1Parser.Tests.csproj", "{70E1F863-9DFF-4B85-A0B8-3C2917E550DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,12 +28,17 @@ Global
 		{A1B5E3B4-1F94-4A47-BC9A-65DACB1E01F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1B5E3B4-1F94-4A47-BC9A-65DACB1E01F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1B5E3B4-1F94-4A47-BC9A-65DACB1E01F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E1F863-9DFF-4B85-A0B8-3C2917E550DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E1F863-9DFF-4B85-A0B8-3C2917E550DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E1F863-9DFF-4B85-A0B8-3C2917E550DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E1F863-9DFF-4B85-A0B8-3C2917E550DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A1B5E3B4-1F94-4A47-BC9A-65DACB1E01F3} = {B4763A60-E92E-48FC-82A2-811DC6977FD7}
+		{70E1F863-9DFF-4B85-A0B8-3C2917E550DF} = {CB044034-971B-4811-8C5C-2C574ACA243C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {694A4768-5331-473D-A54B-9DF4987DF6FA}
