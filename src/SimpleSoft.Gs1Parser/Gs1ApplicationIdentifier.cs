@@ -12,15 +12,24 @@ public class Gs1ApplicationIdentifier
     /// <param name="prefix"></param>
     /// <param name="dataContent"></param>
     /// <exception cref="ArgumentNullException"></exception>
+    /// <exception cref="ArgumentException"></exception>
     public Gs1ApplicationIdentifier(
         string value,
         string prefix,
         string dataContent
     )
     {
-        Value = value ?? throw new ArgumentNullException(nameof(value));
-        Prefix = prefix ?? throw new ArgumentNullException(nameof(prefix));
-        DataContent = dataContent ?? throw new ArgumentNullException(nameof(dataContent));
+        Value = value
+            .NotNull(nameof(value))
+            .NotNullOrWhiteSpace(nameof(value));
+
+        Prefix = prefix
+            .NotNull(nameof(prefix))
+            .NotNullOrWhiteSpace(nameof(prefix));
+
+        DataContent = dataContent
+            .NotNull(nameof(dataContent))
+            .NotNullOrWhiteSpace(nameof(dataContent));
     }
 
     /// <summary>
