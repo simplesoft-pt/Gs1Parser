@@ -5,19 +5,19 @@ public class Gs1ApplicationIdentifierTests
     [Fact]
     public void Constructor_NullValue_ArgumentNullException()
     {
-        string? value = null;
+        string? rawValue = null;
 
         var ex = Assert.Throws<ArgumentNullException>(() =>
         {
             var _ = new Gs1ApplicationIdentifier(
-                value,
+                rawValue,
                 ".",
                 "."
             );
         });
 
         Assert.NotNull(ex);
-        Assert.Equal(nameof(value), ex.ParamName);
+        Assert.Equal(nameof(rawValue), ex.ParamName);
     }
 
     [Fact]
@@ -59,19 +59,19 @@ public class Gs1ApplicationIdentifierTests
     [Theory]
     [InlineData("")]
     [InlineData("     ")]
-    public void Constructor_InvalidValue_ArgumentException(string value)
+    public void Constructor_InvalidValue_ArgumentException(string rawValue)
     {
         var ex = Assert.Throws<ArgumentException>(() =>
         {
             var _ = new Gs1ApplicationIdentifier(
-                value,
+                rawValue,
                 ".",
                 "."
             );
         });
 
         Assert.NotNull(ex);
-        Assert.Equal(nameof(value), ex.ParamName);
+        Assert.Equal(nameof(rawValue), ex.ParamName);
     }
 
     [Theory]
@@ -108,5 +108,23 @@ public class Gs1ApplicationIdentifierTests
 
         Assert.NotNull(ex);
         Assert.Equal(nameof(dataContent), ex.ParamName);
+    }
+
+    [Fact]
+    public void Constructor_ValidParams_PropertiesSame()
+    {
+        const string rawValue = "rawValue";
+        const string prefix = "prefix";
+        const string dataContent = "dataContent";
+
+        var ai = new Gs1ApplicationIdentifier(
+            rawValue,
+            prefix,
+            dataContent
+        );
+
+        Assert.Same(rawValue, ai.RawValue);
+        Assert.Same(prefix, ai.Prefix);
+        Assert.Same(dataContent, ai.DataContent);
     }
 }

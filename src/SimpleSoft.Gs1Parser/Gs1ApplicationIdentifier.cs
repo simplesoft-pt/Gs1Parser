@@ -5,22 +5,24 @@
 /// </summary>
 public class Gs1ApplicationIdentifier
 {
+    private string _toString;
+
     /// <summary>
     /// Creates a new instance
     /// </summary>
-    /// <param name="value"></param>
+    /// <param name="rawValue"></param>
     /// <param name="prefix"></param>
     /// <param name="dataContent"></param>
     /// <exception cref="ArgumentNullException"></exception>
     /// <exception cref="ArgumentException"></exception>
     public Gs1ApplicationIdentifier(
-        string value,
+        string rawValue,
         string prefix,
         string dataContent
     )
     {
-        value.NotNull(nameof(value));
-        value.NotNullOrWhiteSpace(nameof(value));
+        rawValue.NotNull(nameof(rawValue));
+        rawValue.NotNullOrWhiteSpace(nameof(rawValue));
 
         prefix.NotNull(nameof(prefix));
         prefix.NotNullOrWhiteSpace(nameof(prefix));
@@ -28,7 +30,7 @@ public class Gs1ApplicationIdentifier
         dataContent.NotNull(nameof(dataContent));
         dataContent.NotNullOrWhiteSpace(nameof(dataContent));
 
-        Value = value;
+        RawValue = rawValue;
         Prefix = prefix;
         DataContent = dataContent;
     }
@@ -36,7 +38,7 @@ public class Gs1ApplicationIdentifier
     /// <summary>
     /// Application identifier original value
     /// </summary>
-    public string Value { get; }
+    public string RawValue { get; }
 
     /// <summary>
     /// Application identifier prefix
@@ -47,4 +49,7 @@ public class Gs1ApplicationIdentifier
     /// Application identifier data content
     /// </summary>
     public string DataContent { get; }
+
+    /// <inheritdoc />
+    public override string ToString() => _toString ??= string.Concat("(", Prefix, ")", DataContent);
 }
