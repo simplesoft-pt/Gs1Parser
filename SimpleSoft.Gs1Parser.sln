@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B4763A60-E92
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{631A535C-2AB1-4C28-A925-4C30518EDB48}"
 	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
 		common.props = common.props
 		LICENSE = LICENSE
 		README.md = README.md
@@ -16,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleSoft.Gs1Parser", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB044034-971B-4811-8C5C-2C574ACA243C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSoft.Gs1Parser.Tests", "tests\SimpleSoft.Gs1Parser.Tests\SimpleSoft.Gs1Parser.Tests.csproj", "{70E1F863-9DFF-4B85-A0B8-3C2917E550DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleSoft.Gs1Parser.Tests", "tests\SimpleSoft.Gs1Parser.Tests\SimpleSoft.Gs1Parser.Tests.csproj", "{70E1F863-9DFF-4B85-A0B8-3C2917E550DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
