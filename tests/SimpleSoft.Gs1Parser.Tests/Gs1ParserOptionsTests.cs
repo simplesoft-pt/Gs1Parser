@@ -8,6 +8,7 @@ public class Gs1ParserOptionsTests
         var options = new Gs1ParserOptions();
 
         Assert.Equal(';', options.Separator);
+        Assert.Null(options.CustomExtractors);
     }
 
     [Fact]
@@ -17,5 +18,6 @@ public class Gs1ParserOptionsTests
 
         Assert.NotNull(options);
         Assert.Equal(';', options.Separator);
+        Assert.Null(options.CustomExtractors);
     }
 }
