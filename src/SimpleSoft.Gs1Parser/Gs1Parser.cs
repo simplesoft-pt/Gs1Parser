@@ -3,7 +3,7 @@
 /// <summary>
 /// Represents a GS1 parser.
 /// </summary>
-public class Gs1Parser
+public class Gs1Parser : IGs1Parser
 {
     private readonly Gs1ParserOptions _options;
 
@@ -27,15 +27,7 @@ public class Gs1Parser
         _options = options;
     }
 
-    /// <summary>
-    /// Parses a given GS1 string retuning a collection of application identifiers
-    /// indexed by their prefix.
-    /// </summary>
-    /// <param name="rawValue">The GS1 string to parse</param>
-    /// <returns>The collection of application identifiers</returns>
-    /// <exception cref="ArgumentNullException"></exception>
-    /// <exception cref="ArgumentException"></exception>
-    /// <exception cref="InvalidOperationException"></exception>
+    /// <inheritdoc />
     public IGs1 Parse(string rawValue)
     {
         var gs1 = new Gs1(rawValue);
@@ -43,7 +35,7 @@ public class Gs1Parser
         do
         {
             if (!TryGetExtractor(rawValue, idx, out var prefix, out var extractor))
-                throw new InvalidOperationException($"Unknown GS1 prefix found on '{rawValue.Substring(idx)}'");
+                throw new FormatException($"Unknown GS1 prefix found on '{rawValue.Substring(idx)}'");
 
             var ai = extractor(rawValue, idx, prefix, _options.Separator);
 
@@ -369,7 +361,7 @@ public class Gs1Parser
         var dataContentStartIndex = startIndex + prefix.Length;
         if (value.Length < dataContentStartIndex + length)
         {
-            throw new InvalidOperationException(
+            throw new FormatException(
                 $"GS1 application identifier '{prefix}' doesn't have the required length on '{value.Substring(startIndex)}'"
             );
         }
@@ -381,7 +373,7 @@ public class Gs1Parser
                 separatorLength = 1;
             else if (isSeparatorRequired)
             {
-                throw new InvalidOperationException(
+                throw new FormatException(
                     $"GS1 application identifier '{prefix}' required separator is missing from '{value.Substring(startIndex)}'"
                 );
             }
@@ -413,7 +405,7 @@ public class Gs1Parser
         var separatorIndex = value.IndexOf(separator, startIndex);
         if (separatorIndex > indexedMaxLength)
         {
-            throw new InvalidOperationException(
+            throw new FormatException(
                 $"GS1 application identifier '{prefix}' separator exceeds maximum length on '{value.Substring(startIndex)}'"
             );
         }
@@ -423,7 +415,7 @@ public class Gs1Parser
         {
             if (value.Length > indexedMaxLength)
             {
-                throw new InvalidOperationException(
+                throw new FormatException(
                     $"GS1 application identifier '{prefix}' required separator is missing from '{value.Substring(startIndex)}'"
                 );
             }
@@ -452,7 +444,7 @@ public class Gs1Parser
     {
         if (value.IndexOf(prefix, startIndex, StringComparison.OrdinalIgnoreCase) != startIndex)
         {
-            throw new InvalidOperationException(
+            throw new FormatException(
                 $"GS1 application identifier '{prefix}' not found on '{value.Substring(startIndex)}'"
             );
         }
