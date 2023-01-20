@@ -4,7 +4,7 @@
 
   <PropertyGroup>
     <Description>Lightweight GS1 parser for .NET applications.</Description>
-    <TargetFrameworks>netstandard2.0;netstandard1.0;net4.5;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard1.0;net4.5;net5.0;net6.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
