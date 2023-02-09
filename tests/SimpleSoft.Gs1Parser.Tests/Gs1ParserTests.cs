@@ -112,7 +112,7 @@ public class Gs1ParserTests
     }
 
     [Theory]
-    [InlineData("1234567890")]
+    [InlineData("10")]
     [InlineData("10;")]
     public void Parse_KnownPrefix_Single_VariableLength_MissingLength_FormatException(string rawValue)
     {
