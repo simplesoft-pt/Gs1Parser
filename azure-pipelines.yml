@@ -27,6 +27,12 @@ steps:
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
     DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
+- script: dotnet test --configuration $(buildConfiguration) --no-restore --no-build
+  displayName: 'dotnet test'
+  env:
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
 - script: dotnet pack --output $(build.artifactStagingDirectory) --configuration $(buildConfiguration) --no-restore --no-build
   displayName: 'dotnet pack nugets'
   env:
