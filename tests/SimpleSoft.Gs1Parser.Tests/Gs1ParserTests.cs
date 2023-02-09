@@ -93,4 +93,36 @@ public class Gs1ParserTests
         Assert.NotNull(value.DataContent);
         Assert.Equal(dataContent, value.DataContent);
     }
+
+    [Theory]
+    [InlineData("17")]
+    [InlineData("17;")]
+    [InlineData("172606")]
+    [InlineData("172606;")]
+    public void Parse_KnownPrefix_Single_FixedLength_MissingLength_FormatException(string rawValue)
+    {
+        var parser = new Gs1Parser();
+
+        var ex = Assert.Throws<FormatException>(() =>
+        {
+            parser.Parse(rawValue);
+        });
+
+        Assert.Contains("doesn't have the required length", ex.Message);
+    }
+
+    [Theory]
+    [InlineData("1234567890")]
+    [InlineData("10;")]
+    public void Parse_KnownPrefix_Single_VariableLength_MissingLength_FormatException(string rawValue)
+    {
+        var parser = new Gs1Parser();
+
+        var ex = Assert.Throws<FormatException>(() =>
+        {
+            parser.Parse(rawValue);
+        });
+
+        Assert.Contains("doesn't have minimum length of 1", ex.Message);
+    }
 }
