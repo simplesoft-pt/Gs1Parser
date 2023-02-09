@@ -426,6 +426,13 @@ public class Gs1Parser : IGs1Parser
 
         var length = separatorIndex - dataContentStartIndex;
 
+        if (length == 0)
+        {
+            throw new FormatException(
+                $"GS1 application identifier '{prefix}' doesn't have minimum length of 1 from '{value.Substring(startIndex)}'"
+            );
+        }
+
         var rawValue = value.Substring(startIndex, prefix.Length + length + separatorLength);
         var dataContent = value.Substring(dataContentStartIndex, length);
 
