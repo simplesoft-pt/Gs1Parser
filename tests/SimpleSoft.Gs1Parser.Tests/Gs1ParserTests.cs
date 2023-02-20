@@ -35,8 +35,8 @@ public class Gs1ParserTests
     }
 
     [Theory]
-    [InlineData("17260630", "17", "260630")]
-    [InlineData("17260630;", "17", "260630")]
+    [InlineData("17260630", Gs1ApplicationIdentifierType.UseBy, "260630")]
+    [InlineData("17260630;", Gs1ApplicationIdentifierType.UseBy, "260630")]
     public void Parse_KnownPrefix_Single_FixedLength_Succeeds(string rawValue, string prefix, string dataContent)
     {
         var parser = new Gs1Parser();
@@ -64,10 +64,10 @@ public class Gs1ParserTests
     }
 
     [Theory]
-    [InlineData("10AB111", "10", "AB111")]
-    [InlineData("10AB111;", "10", "AB111")]
-    [InlineData("10AB111AB111AB111AB111", "10", "AB111AB111AB111AB111")]
-    [InlineData("10AB111AB111AB111AB111;", "10", "AB111AB111AB111AB111")]
+    [InlineData("10AB111", Gs1ApplicationIdentifierType.Batch, "AB111")]
+    [InlineData("10AB111;", Gs1ApplicationIdentifierType.Batch, "AB111")]
+    [InlineData("10AB111AB111AB111AB111", Gs1ApplicationIdentifierType.Batch, "AB111AB111AB111AB111")]
+    [InlineData("10AB111AB111AB111AB111;", Gs1ApplicationIdentifierType.Batch, "AB111AB111AB111AB111")]
     public void Parse_KnownPrefix_Single_VariableLength_Succeeds(string rawValue, string prefix, string dataContent)
     {
         var parser = new Gs1Parser();
