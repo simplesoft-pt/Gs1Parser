@@ -37,8 +37,8 @@ var gs1Parser = new Gs1Parser(new Gs1ParserOptions
 
 var gs1 = gs1Parser.Parse("10AB111;17260630");
 
-Assert.Equal("AB111", gs1["10"].DataContent);
-Assert.Equal("260630", gs1["17"].DataContent);
+Assert.Equal("AB111", gs1[Gs1ApplicationIdentifierType.Batch].DataContent); // gs1["10"].DataContent
+Assert.Equal("260630", gs1[Gs1ApplicationIdentifierType.UseBy].DataContent); // gs1["17"].DataContent
 ```
 
 The library also provides both a default options and parser that can be used instead of initializing your own instances (the parser implementation is thread safe, your can use it as a singleton across your application):
@@ -48,8 +48,8 @@ Gs1ParserOptions.Default.Separator = ';';
 
 var gs1 = Gs1Parser.Default.Parse("10AB111;17260630");
 
-Assert.Equal("AB111", gs1["10"].DataContent);
-Assert.Equal("260630", gs1["17"].DataContent);
+Assert.Equal("AB111", gs1[Gs1ApplicationIdentifierType.Batch].DataContent);
+Assert.Equal("260630", gs1[Gs1ApplicationIdentifierType.UseBy].DataContent);
 ```
 
 As a note, if you initialize a `Gs1Parser` instance without passing an options, it will use the default one.
