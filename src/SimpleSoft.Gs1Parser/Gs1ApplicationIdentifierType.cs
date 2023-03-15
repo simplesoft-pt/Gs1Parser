@@ -256,6 +256,11 @@ public static class Gs1ApplicationIdentifierType
     public const string LogisticVolumeCubicMeters = "336";
 
     /// <summary>
+    /// Kilograms per square meter (Cubic yards): AI (337)
+    /// </summary>
+    public const string KilogramsPerSquareMeter = "337";
+
+    /// <summary>
     /// Logistic weight (Pounds): AI (340)
     /// </summary>
     public const string LogisticWightPounds = "340";
@@ -394,6 +399,41 @@ public static class Gs1ApplicationIdentifierType
     /// Logistic volume (Cubic yards): AI (369)
     /// </summary>
     public const string LogisticVolumeCubicYards = "369";
+
+    /// <summary>
+    /// Count of trade items or trade item pieces contained in a logistic unit: AI (37)
+    /// </summary>
+    public const string Count = "37";
+
+    /// <summary>
+    /// Amount payable or coupon value - Single monetary area: AI (390)
+    /// </summary>
+    public const string Amount = "390";
+
+    /// <summary>
+    /// Amount payable and ISO currency code: AI (391)
+    /// </summary>
+    public const string AmountIso = "391";
+
+    /// <summary>
+    /// Amount payable for a variable measure trade item – Single monetary area: AI (392)
+    /// </summary>
+    public const string Price = "392";
+
+    /// <summary>
+    /// Amount payable for a variable measure trade item and ISO currency code: AI (393)
+    /// </summary>
+    public const string PriceIso = "393";
+
+    /// <summary>
+    /// Percentage discount of a coupon: AI (394)
+    /// </summary>
+    public const string PrcntOff = "394";
+
+    /// <summary>
+    /// Amount payable per unit of measure single monetary area (variable measure trade item): AI (395)
+    /// </summary>
+    public const string PriceUoM = "395";
 
     #endregion
 }
