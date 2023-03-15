@@ -675,4 +675,223 @@ public static class Gs1ApplicationIdentifierType
     public const string RelDate = "4326";
 
     #endregion
+
+    #region GS1 Application Identifiers starting with digit 7
+
+    /// <summary>
+    /// NATO Stock Number (NSN): AI (7001)
+    /// </summary>
+    public const string Nsn = "7001";
+
+    /// <summary>
+    /// UN/ECE meat carcasses and cuts classification: AI (7002)
+    /// </summary>
+    public const string MeatCut = "7002";
+
+    /// <summary>
+    /// Expiration date and time: AI (7003)
+    /// </summary>
+    public const string ExpiryTime = "7003";
+
+    /// <summary>
+    /// Active potency: AI (7004)
+    /// </summary>
+    public const string ActivePotency = "7004";
+
+    /// <summary>
+    /// Catch area: AI (7005)
+    /// </summary>
+    public const string CatchArea = "7005";
+
+    /// <summary>
+    /// First freeze date: AI (7006)
+    /// </summary>
+    public const string FirstFreezeDate = "7006";
+
+    /// <summary>
+    /// Harvest date: AI (7007)
+    /// </summary>
+    public const string HarvestDate = "7007";
+
+    /// <summary>
+    /// Species for fishery purposes: AI (7008)
+    /// </summary>
+    public const string AquaticSpecies = "7008";
+
+    /// <summary>
+    /// Fishing gear type: AI (7009)
+    /// </summary>
+    public const string FishingGearType = "7009";
+
+    /// <summary>
+    /// Production method: AI (7010)
+    /// </summary>
+    public const string ProdMethod = "7010";
+
+    /// <summary>
+    /// Test by date: AI (7011)
+    /// </summary>
+    public const string TestByDate = "7011";
+
+    /// <summary>
+    /// Refurbishment lot ID: AI (7020)
+    /// </summary>
+    public const string RefurbLot = "7020";
+
+    /// <summary>
+    /// Functional status: AI (7021)
+    /// </summary>
+    public const string FuncStat = "7021";
+
+    /// <summary>
+    /// Revision status: AI (7022)
+    /// </summary>
+    public const string RevStat = "7022";
+
+    /// <summary>
+    /// Global Individual Asset Identifier of an assembly: AI (7023)
+    /// </summary>
+    public const string GiaiAssembly = "7023";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor0 = "7030";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor1 = "7031";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor2 = "7032";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor3 = "7033";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor4 = "7034";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor5 = "7035";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor6 = "7036";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor7 = "7037";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor8 = "7038";
+
+    /// <summary>
+    /// Number of processor with three-digit ISO country code: AI (703s)
+    /// </summary>
+    public const string Processor9 = "7039";
+
+    /// <summary>
+    /// GS1 UIC with Extension 1 and Importer index: AI (7040)
+    /// </summary>
+    public const string UicExt = "7040";
+
+    /// <summary>
+    /// National Healthcare Reimbursement Number (NHRN) - Germany IFA: AI (710)
+    /// </summary>
+    public const string NhrnGermany = "710";
+
+    /// <summary>
+    /// National Healthcare Reimbursement Number (NHRN) - France CIP: AI (711)
+    /// </summary>
+    public const string NhrnFrance = "711";
+
+    /// <summary>
+    /// National Healthcare Reimbursement Number (NHRN) - Spain National Code: AI (712)
+    /// </summary>
+    public const string NhrnSpain = "712";
+
+    /// <summary>
+    /// National Healthcare Reimbursement Number (NHRN) - Brazil ANVISA: AI (713)
+    /// </summary>
+    public const string NhrnBrazil = "713";
+
+    /// <summary>
+    /// National Healthcare Reimbursement Number (NHRN) - Portugal INFARMED: AI (714)
+    /// </summary>
+    public const string NhrnPortugal = "714";
+
+    /// <summary>
+    /// National Healthcare Reimbursement Number (NHRN) - United States of America FDA: AI (715)
+    /// </summary>
+    public const string NhrnUsa = "715";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert0 = "7230";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert1 = "7231";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert2 = "7232";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert3 = "7233";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert4 = "7234";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert5 = "7235";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert6 = "7236";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert7 = "7237";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert8 = "7238";
+
+    /// <summary>
+    /// Certification reference: AI (723s)
+    /// </summary>
+    public const string Cert9 = "7239";
+
+    /// <summary>
+    /// Protocol ID: AI (7240)
+    /// </summary>
+    public const string Protocol = "7240";
+
+    #endregion
 }
