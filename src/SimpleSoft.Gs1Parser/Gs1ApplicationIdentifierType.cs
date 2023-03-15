@@ -1,6 +1,4 @@
-﻿using System.Runtime.ConstrainedExecution;
-
-namespace SimpleSoft.Gs1Parser;
+﻿namespace SimpleSoft.Gs1Parser;
 
 /// <summary>
 /// Represents a GS1 application identifier prefixes
@@ -1003,6 +1001,60 @@ public static class Gs1ApplicationIdentifierType
     /// Extended packaging URL: AI (8200)
     /// </summary>
     public const string ProductUrl = "8200";
+
+    #endregion
+
+    #region GS1 Application Identifiers starting with digit 9
+
+    /// <summary>
+    /// Information mutually agreed between trading partners: AI (90)
+    /// </summary>
+    public const string Internal0 = "90";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal1 = "91";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal2 = "92";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal3 = "93";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal4 = "94";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal5 = "95";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal6 = "96";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal7 = "97";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal8 = "98";
+
+    /// <summary>
+    /// Company internal information: AIs (91 - 99)
+    /// </summary>
+    public const string Internal9 = "99";
 
     #endregion
 }
