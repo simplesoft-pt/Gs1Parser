@@ -221,6 +221,91 @@ public static class Gs1ApplicationIdentifierType
     public const string HeightYards = "329";
 
     /// <summary>
+    /// Logistic weight (Kilograms): AI (330)
+    /// </summary>
+    public const string LogisticWeightKilograms = "330";
+
+    /// <summary>
+    /// Logistic length or first dimension (Meters): AI (331)
+    /// </summary>
+    public const string LogisticLengthMeters = "331";
+
+    /// <summary>
+    /// Logistic width, diameter, or second dimension (Meters): AI (332)
+    /// </summary>
+    public const string LogisticWidthMeters = "332";
+
+    /// <summary>
+    /// Logistic depth, thickness, height, or third dimension (Meters): AI (333)
+    /// </summary>
+    public const string LogisticHeightMeters = "333";
+
+    /// <summary>
+    /// Logistic area (Square meters): AI (334)
+    /// </summary>
+    public const string LogisticAreaSquareMeters = "334";
+
+    /// <summary>
+    /// Logistic volume (Liters): AI (335)
+    /// </summary>
+    public const string LogisticVolumeLiters = "335";
+
+    /// <summary>
+    /// Logistic volume (Cubic meters): AI (336)
+    /// </summary>
+    public const string LogisticVolumeCubicMeters = "336";
+
+    /// <summary>
+    /// Logistic weight (Pounds): AI (340)
+    /// </summary>
+    public const string LogisticWightPounds = "340";
+
+    /// <summary>
+    /// Logistic length or first dimension (Inches): AI (341)
+    /// </summary>
+    public const string LogisticLengthInches = "341";
+
+    /// <summary>
+    /// Logistic length or first dimension (Feet): AI (342)
+    /// </summary>
+    public const string LogisticLengthFeet = "342";
+
+    /// <summary>
+    /// Logistic length or first dimension (Yards): AI (343)
+    /// </summary>
+    public const string LogisticLengthYards = "343";
+
+    /// <summary>
+    /// Logistic width, diameter, or second dimension (Inches): AI (344)
+    /// </summary>
+    public const string LogisticWidthInches = "344";
+
+    /// <summary>
+    /// Logistic width, diameter, or second dimension (Feet): AI (345)
+    /// </summary>
+    public const string LogisticWidthFeet = "345";
+
+    /// <summary>
+    /// Logistic width, diameter, or second dimension (Yards): AI (346)
+    /// </summary>
+    public const string LogisticWidthYards = "346";
+
+    /// <summary>
+    /// Logistic depth, thickness, height, or third dimension (Inches): AI (347)
+    /// </summary>
+    public const string LogisticHeightInches = "347";
+
+    /// <summary>
+    /// Logistic depth, thickness, height, or third dimension (Feet): AI (348)
+    /// </summary>
+    public const string LogisticHeightFeet = "348";
+
+    /// <summary>
+    /// Logistic depth, thickness, height, or third dimension (Inches): AI (349)
+    /// </summary>
+    public const string LogisticHeightYards = "349";
+
+    /// <summary>
     /// Area (Square inches): AI (350)
     /// </summary>
     public const string AreaSquareInches = "350";
@@ -234,6 +319,21 @@ public static class Gs1ApplicationIdentifierType
     /// Area (Square yards): AI (352)
     /// </summary>
     public const string AreaSquareYards = "352";
+
+    /// <summary>
+    /// Logistic area (Square inches): AI (353)
+    /// </summary>
+    public const string LogisticAreaSquareInches = "353";
+
+    /// <summary>
+    /// Logistic area (Square feet): AI (354)
+    /// </summary>
+    public const string LogisticAreaSquareFeet = "354";
+
+    /// <summary>
+    /// Logistic area (Square yards): AI (355)
+    /// </summary>
+    public const string LogisticAreaSquareYards = "355";
 
     /// <summary>
     /// Net weight (Troy ounces): AI (356)
@@ -256,6 +356,16 @@ public static class Gs1ApplicationIdentifierType
     public const string NetVolumeGallons = "361";
 
     /// <summary>
+    /// Logistic volume (Quarts): AI (362)
+    /// </summary>
+    public const string LogisticVolumeQuarts = "362";
+
+    /// <summary>
+    /// Logistic volume (Gallons): AI (363)
+    /// </summary>
+    public const string LogisticVolumeGallons = "363";
+
+    /// <summary>
     /// Net volume (Cubic inches): AI (364)
     /// </summary>
     public const string NetVolumeCubicInches = "364";
@@ -269,6 +379,21 @@ public static class Gs1ApplicationIdentifierType
     /// Net volume (Cubic yards): AI (366)
     /// </summary>
     public const string NetVolumeCubicYards = "366";
+
+    /// <summary>
+    /// Logistic volume (Cubic inches): AI (367)
+    /// </summary>
+    public const string LogisticVolumeCubicInches = "367";
+
+    /// <summary>
+    /// Logistic volume (Cubic feet): AI (368)
+    /// </summary>
+    public const string LogisticVolumeCubicFeet = "368";
+
+    /// <summary>
+    /// Logistic volume (Cubic yards): AI (369)
+    /// </summary>
+    public const string LogisticVolumeCubicYards = "369";
 
     #endregion
 }
