@@ -436,4 +436,243 @@ public static class Gs1ApplicationIdentifierType
     public const string PriceUoM = "395";
 
     #endregion
+
+    #region GS1 Application Identifiers starting with digit 4
+
+    /// <summary>
+    /// Customer’s purchase order number: AI (400)
+    /// </summary>
+    public const string OrderNumber = "400";
+
+    /// <summary>
+    /// Global Identification Number for Consignment (GINC): AI (401)
+    /// </summary>
+    public const string Ginc = "401";
+
+    /// <summary>
+    /// Global Shipment Identification Number (GSIN): AI (402)
+    /// </summary>
+    public const string Gsin = "402";
+
+    /// <summary>
+    /// Routing code: AI (403)
+    /// </summary>
+    public const string Route = "403";
+
+    /// <summary>
+    /// Ship to - Deliver to Global Location Number (GLN): AI (410)
+    /// </summary>
+    public const string ShipToLoc = "410";
+
+    /// <summary>
+    /// Bill to - Invoice to Global Location Number (GLN): AI (411)
+    /// </summary>
+    public const string BillTo = "411";
+
+    /// <summary>
+    /// Purchased from Global Location Number (GLN): AI (412)
+    /// </summary>
+    public const string PurchaseFrom = "412";
+
+    /// <summary>
+    /// Ship for - Deliver for - Forward to Global Location Number (GLN): AI (413)
+    /// </summary>
+    public const string ShipForLoc = "413";
+
+    /// <summary>
+    /// Identification of a physical location - Global Location Number (GLN): AI (414)
+    /// </summary>
+    public const string LocNo = "414";
+
+    /// <summary>
+    /// Global Location Number (GLN) of the invoicing party: AI (415)
+    /// </summary>
+    public const string PayTo = "415";
+
+    /// <summary>
+    /// Global Location Number (GLN) of the production or service location: AI (416)
+    /// </summary>
+    public const string ProdServLoc = "416";
+
+    /// <summary>
+    /// Party Global Location Number (GLN): AI (417)
+    /// </summary>
+    public const string Party = "417";
+
+    /// <summary>
+    /// Ship-to / Deliver-to postal code within a single postal authority: AI (420)
+    /// </summary>
+    public const string ShipToPost = "420";
+
+    /// <summary>
+    /// Ship-to / Deliver-to postal code with three-digit ISO country code: AI (421)
+    /// </summary>
+    public const string ShipToPostIso = "421";
+
+    /// <summary>
+    /// Country of origin of a trade item: AI (422)
+    /// </summary>
+    public const string Origin = "422";
+
+    /// <summary>
+    /// Country of initial processing: AI (423)
+    /// </summary>
+    public const string CountryInitialProcess = "423";
+
+    /// <summary>
+    /// Country of processing: AI (424)
+    /// </summary>
+    public const string CountryProcess = "424";
+
+    /// <summary>
+    /// Country of disassembly: AI (425)
+    /// </summary>
+    public const string CountryDisassembly = "425";
+
+    /// <summary>
+    /// Country covering full process chain: AI (426)
+    /// </summary>
+    public const string CountryFullProcess = "426";
+
+    /// <summary>
+    /// Country subdivision of origin code for a trade item: AI (427)
+    /// </summary>
+    public const string OriginSubdivision = "427";
+
+    /// <summary>
+    /// Ship-to / Deliver-to Company name: AI (4300)
+    /// </summary>
+    public const string DeliverToComp = "4300";
+
+    /// <summary>
+    /// Ship-to / Deliver-to contact name: AI (4301)
+    /// </summary>
+    public const string DeliverToName = "4301";
+
+    /// <summary>
+    /// Ship-to / Deliver-to address line 1: AI (4302)
+    /// </summary>
+    public const string DeliverToAdd1 = "4302";
+
+    /// <summary>
+    /// Ship-to / Deliver-to address line 2: AI (4303)
+    /// </summary>
+    public const string DeliverToAdd2 = "4303";
+
+    /// <summary>
+    /// Ship-to / Deliver-to suburb: AI (4304)
+    /// </summary>
+    public const string DeliverToSub = "4304";
+
+    /// <summary>
+    /// Ship-to / Deliver-to locality: AI (4305)
+    /// </summary>
+    public const string DeliverToLoc = "4305";
+
+    /// <summary>
+    /// Ship-to / Deliver-to region: AI (4306)
+    /// </summary>
+    public const string DeliverToReg = "4306";
+
+    /// <summary>
+    /// Ship-to / Deliver-to country code: AI (4307)
+    /// </summary>
+    public const string DeliverToCountry = "4307";
+
+    /// <summary>
+    /// Ship-to / Deliver-to telephone number: AI (4308)
+    /// </summary>
+    public const string DeliverToPhone = "4308";
+
+    /// <summary>
+    /// Ship-to / Deliver-to GEO location: AI (4309)
+    /// </summary>
+    public const string DeliverToGeo = "4309";
+
+    /// <summary>
+    /// Return-to company name: AI (4310)
+    /// </summary>
+    public const string RtnToComp = "4310";
+
+    /// <summary>
+    /// Return-to contact name: AI (4311)
+    /// </summary>
+    public const string RtnToName = "4311";
+
+    /// <summary>
+    /// Return-to address line 1: AI (4312)
+    /// </summary>
+    public const string RtnToAdd1 = "4312";
+
+    /// <summary>
+    /// Return-to address line 2: AI (4313)
+    /// </summary>
+    public const string RtnToAdd2 = "4313";
+
+    /// <summary>
+    /// Return-to suburb: AI (4314)
+    /// </summary>
+    public const string RtnToSub = "4314";
+
+    /// <summary>
+    /// Return-to locality: AI (4315)
+    /// </summary>
+    public const string RtnToLoc = "4315";
+
+    /// <summary>
+    /// Return-to region: AI (4316)
+    /// </summary>
+    public const string RtnToReg = "4316";
+
+    /// <summary>
+    /// Return-to country code: AI (4317)
+    /// </summary>
+    public const string RtnToCountry = "4317";
+
+    /// <summary>
+    /// Return-to postal code: AI (4318)
+    /// </summary>
+    public const string RtnToPost = "4318";
+
+    /// <summary>
+    /// Return-to telephone number: AI (4319)
+    /// </summary>
+    public const string RtnToPhone = "4319";
+
+    /// <summary>
+    /// Service code description: AI (4320)
+    /// </summary>
+    public const string SrvDescription = "4320";
+
+    /// <summary>
+    /// Dangerous goods flag: AI (4321)
+    /// </summary>
+    public const string DangerousGoods = "4321";
+
+    /// <summary>
+    /// Authority to leave flag: AI (4322)
+    /// </summary>
+    public const string AuthLeave = "4322";
+
+    /// <summary>
+    /// Signature required flag: AI (4323)
+    /// </summary>
+    public const string SigRequired = "4323";
+
+    /// <summary>
+    /// Not before delivery date/time: AI (4324)
+    /// </summary>
+    public const string NbefDelDt = "4324";
+
+    /// <summary>
+    /// Not after delivery date/time: AI (4325)
+    /// </summary>
+    public const string NaftDelDt = "4325";
+
+    /// <summary>
+    /// Release date: AI (4326)
+    /// </summary>
+    public const string RelDate = "4326";
+
+    #endregion
 }
