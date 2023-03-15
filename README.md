@@ -41,7 +41,8 @@ Assert.Equal("AB111", gs1[Gs1ApplicationIdentifierType.Batch].DataContent); // g
 Assert.Equal("260630", gs1[Gs1ApplicationIdentifierType.UseBy].DataContent); // gs1["17"].DataContent
 ```
 
-The library also provides both a default options and parser that can be used instead of initializing your own instances (the parser implementation is thread safe, your can use it as a singleton across your application):
+The library also provides both a default options and parser that can be used instead of initializing your own instances (the parser implementation is thread safe, 
+you can use it as a singleton across your application):
 
 ```cs
 Gs1ParserOptions.Default.Separator = ';';
@@ -55,7 +56,7 @@ Assert.Equal("260630", gs1[Gs1ApplicationIdentifierType.UseBy].DataContent);
 As a note, if you initialize a `Gs1Parser` instance without passing an options, it will use the default one.
 
 ```cs
-// this lines are equivalent
+// both lines are equivalent
 new Gs1Parser();
 new Gs1Parser(Gs1ParserOptions.Default);
 ```
