@@ -1,4 +1,6 @@
-﻿namespace SimpleSoft.Gs1Parser;
+﻿using System.Runtime.ConstrainedExecution;
+
+namespace SimpleSoft.Gs1Parser;
 
 /// <summary>
 /// Represents a GS1 application identifier prefixes
@@ -892,6 +894,115 @@ public static class Gs1ApplicationIdentifierType
     /// Protocol ID: AI (7240)
     /// </summary>
     public const string Protocol = "7240";
+
+    #endregion
+
+    #region GS1 Application Identifiers starting with digit 8
+
+    /// <summary>
+    /// Roll products - width, length, core diameter, direction, splices: AI (8001)
+    /// </summary>
+    public const string Dimensions = "8001";
+
+    /// <summary>
+    /// Cellular mobile telephone identifier: AI (8002)
+    /// </summary>
+    public const string CmtNo = "8002";
+
+    /// <summary>
+    /// Global Returnable Asset Identifier (GRAI): AI (8003)
+    /// </summary>
+    public const string Grai = "8003";
+
+    /// <summary>
+    /// Global Individual Asset Identifier (GIAI): AI (8004)
+    /// </summary>
+    public const string Giai = "8004";
+
+    /// <summary>
+    /// Price per unit of measure: AI (8005)
+    /// </summary>
+    public const string PricePerUnit = "8005";
+
+    /// <summary>
+    /// Identification of an individual trade item (ITIP) piece: AI (8006)
+    /// </summary>
+    public const string Itip = "8006";
+
+    /// <summary>
+    /// International Bank Account Number (IBAN): AI (8007)
+    /// </summary>
+    public const string Iban = "8007";
+
+    /// <summary>
+    /// Date and time of production: AI (8008)
+    /// </summary>
+    public const string ProdTime = "8008";
+
+    /// <summary>
+    /// Optically readable sensor indicator: AI (8009)
+    /// </summary>
+    public const string Optsen = "8009";
+
+    /// <summary>
+    /// Component/Part Identifier (CPID): AI (8010)
+    /// </summary>
+    public const string Cpid = "8010";
+
+    /// <summary>
+    /// Component/Part Identifier serial number: AI (8011)
+    /// </summary>
+    public const string CpidSerial = "8011";
+
+    /// <summary>
+    /// Software version: AI (8012)
+    /// </summary>
+    public const string Version = "8012";
+
+    /// <summary>
+    /// Global Model Number (GMN): AI (8013)
+    /// </summary>
+    public const string Gmn = "8013";
+
+    /// <summary>
+    /// Global Service Relation Number (GSRN - PROVIDER): AI (8017)
+    /// </summary>
+    public const string GsrnProvider = "8017";
+
+    /// <summary>
+    /// Global Service Relation Number (GSRN - RECIPIENT): AI (8018)
+    /// </summary>
+    public const string GsrnRecipient = "8018";
+
+    /// <summary>
+    /// Service Relation Instance Number (SRIN): AI (8019)
+    /// </summary>
+    public const string Srin = "8019";
+
+    /// <summary>
+    /// Payment slip reference number: AI (8020)
+    /// </summary>
+    public const string RefNo = "8020";
+
+    /// <summary>
+    /// Identification of pieces of a trade item (ITIP) contained in a logistic unit: AI (8026)
+    /// </summary>
+    public const string ItipContent = "8026";
+
+    /// <summary>
+    /// Coupon code identification for use in North America: AI (8110)
+    /// </summary>
+    public const string CouponCodeNorthAmerica = "8110";
+
+    /// <summary>
+    /// Loyalty points of a coupon: AI (8111)
+    /// </summary>
+    public const string Points = "8111";
+
+    /// <summary>
+    /// Extended packaging URL: AI (8200)
+    /// </summary>
+    public const string ProductUrl = "8200";
 
     #endregion
 }
