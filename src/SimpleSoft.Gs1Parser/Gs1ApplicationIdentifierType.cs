@@ -127,4 +127,148 @@ public static class Gs1ApplicationIdentifierType
     public const string Gcn = "255";
 
     #endregion
+
+    #region GS1 Application Identifiers starting with digit 3
+
+    /// <summary>
+    /// Variable count of items: AI (30)
+    /// </summary>
+    public const string VarCount = "30";
+
+    /// <summary>
+    /// Net weight (Kilograms): AI (310)
+    /// </summary>
+    public const string NetWeightKilograms = "310";
+
+    /// <summary>
+    /// Length or first dimension (Meters): AI (311)
+    /// </summary>
+    public const string LengthMeters = "311";
+
+    /// <summary>
+    /// Width, diameter, or second dimension (Meters): AI (312)
+    /// </summary>
+    public const string WidthMeters = "312";
+
+    /// <summary>
+    /// Depth, thickness, height, or third dimension (Meters): AI (313)
+    /// </summary>
+    public const string HeightMeters = "313";
+
+    /// <summary>
+    /// Area (Square meters): AI (314)
+    /// </summary>
+    public const string AreaSquareMeters = "314";
+
+    /// <summary>
+    /// Net volume (Liters): AI (315)
+    /// </summary>
+    public const string NetVolumeLiters = "315";
+
+    /// <summary>
+    /// Net volume (Cubic meters): AI (316)
+    /// </summary>
+    public const string NetVolumeCubicMeters = "316";
+
+    /// <summary>
+    /// Net weight (Pounds): AI (320)
+    /// </summary>
+    public const string NetWeightPounds = "320";
+
+    /// <summary>
+    /// Length or first dimension (Inches): AI (321)
+    /// </summary>
+    public const string LengthInches = "321";
+
+    /// <summary>
+    /// Length or first dimension (Feet): AI (322)
+    /// </summary>
+    public const string LengthFeet = "322";
+
+    /// <summary>
+    /// Length or first dimension (Yards): AI (323)
+    /// </summary>
+    public const string LengthYards = "323";
+
+    /// <summary>
+    /// Width, diameter, or second dimension (Inches): AI (324)
+    /// </summary>
+    public const string WidthInches = "324";
+
+    /// <summary>
+    /// Width, diameter, or second dimension (Feet): AI (325)
+    /// </summary>
+    public const string WidthFeet = "325";
+
+    /// <summary>
+    /// Width, diameter, or second dimension (Yards): AI (326)
+    /// </summary>
+    public const string WidthYards = "326";
+
+    /// <summary>
+    /// Depth, thickness, height, or third dimension (Inches): AI (327)
+    /// </summary>
+    public const string HeightInches = "327";
+
+    /// <summary>
+    /// Depth, thickness, height, or third dimension (Feet): AI (328)
+    /// </summary>
+    public const string HeightFeet = "328";
+
+    /// <summary>
+    /// Depth, thickness, height, or third dimension (Yards): AI (329)
+    /// </summary>
+    public const string HeightYards = "329";
+
+    /// <summary>
+    /// Area (Square inches): AI (350)
+    /// </summary>
+    public const string AreaSquareInches = "350";
+
+    /// <summary>
+    /// Area (Square feet): AI (351)
+    /// </summary>
+    public const string AreaSquareFeet = "351";
+
+    /// <summary>
+    /// Area (Square yards): AI (352)
+    /// </summary>
+    public const string AreaSquareYards = "352";
+
+    /// <summary>
+    /// Net weight (Troy ounces): AI (356)
+    /// </summary>
+    public const string NetWeightTroyOunces = "356";
+
+    /// <summary>
+    /// Net weight (or volume) (Ounces): AI (357)
+    /// </summary>
+    public const string NetWeightOunces = "357";
+
+    /// <summary>
+    /// Net volume (Quarts): AI (360)
+    /// </summary>
+    public const string NetVolumeQuarts = "360";
+
+    /// <summary>
+    /// Net volume (Gallons): AI (361)
+    /// </summary>
+    public const string NetVolumeGallons = "361";
+
+    /// <summary>
+    /// Net volume (Cubic inches): AI (364)
+    /// </summary>
+    public const string NetVolumeCubicInches = "364";
+
+    /// <summary>
+    /// Net volume (Cubic feet): AI (365)
+    /// </summary>
+    public const string NetVolumeCubicFeet = "365";
+
+    /// <summary>
+    /// Net volume (Cubic yards): AI (366)
+    /// </summary>
+    public const string NetVolumeCubicYards = "366";
+
+    #endregion
 }
