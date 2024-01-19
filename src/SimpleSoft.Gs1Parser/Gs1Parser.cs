@@ -30,7 +30,7 @@ public class Gs1Parser : IGs1Parser
     /// <inheritdoc />
     public IGs1 Parse(string rawValue)
     {
-        var gs1 = new Gs1(rawValue);
+        var gs1 = new Gs1(rawValue, _options.Separator);
         var idx = 0;
         do
         {
