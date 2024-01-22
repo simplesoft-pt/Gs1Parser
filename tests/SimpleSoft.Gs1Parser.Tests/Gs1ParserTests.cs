@@ -1,4 +1,6 @@
-﻿namespace SimpleSoft.Gs1Parser;
+﻿using Newtonsoft.Json.Linq;
+
+namespace SimpleSoft.Gs1Parser;
 
 public class Gs1ParserTests
 {
@@ -124,5 +126,18 @@ public class Gs1ParserTests
         });
 
         Assert.Contains("doesn't have minimum length of 1", ex.Message);
+    }
+
+    [Theory]
+    [InlineData("10AB111", ';' , "AB111")]
+    [InlineData("10AB111", '-', "AB111")]
+    public void Parse_GS1_ToString_Uses_Separator(string rawValue, char separator, string datacontext)
+    {
+        var options = new Gs1ParserOptions() { Separator = separator };
+        var parser = new Gs1Parser(options);
+
+        var gs1 = parser.Parse(rawValue);
+
+        Assert.Equal(gs1.ToString(), $"(10){datacontext}{separator}");
     }
 }
